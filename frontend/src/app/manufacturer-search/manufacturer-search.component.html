@@ -1,0 +1,25 @@
+<div class="container.fluid">
+  <div class="row">
+    <div class="col">
+      <h3 class="title-style">
+        Manufacturer Search
+      </h3>
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span><button type="button" class="btn btn-warning" (click)="onEnter(searchTerm.value)">Search</button></span>
+        </div>
+        <input type="text" class="form-control" aria-label="Search"
+               #searchTerm (keyup.enter)="onEnter(searchTerm.value)"
+               (keyup)="onKeyStroke(searchTerm.value)" aria-describedby="basic-addon1">
+      </div>
+    </div>
+  </div>
+  <ul class="card-group">
+    <app-manufacturer (manufacturerSelected)="onManufacturerSelected($event)" style="padding-bottom: 10px"
+                      *ngFor="let manufacturer of  manufacturerList "
+                      [manufacturer]="manufacturer">
+    </app-manufacturer>
+  </ul>
+
+
+</div>

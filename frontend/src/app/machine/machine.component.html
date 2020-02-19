@@ -1,0 +1,19 @@
+<div class="card mb-3">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm">
+        <h5 class="card-title">{{ machineName }}</h5>
+      </div>
+      <div class="col-sm">
+        <div class="card-body">
+          <p class="card-text">RPM: {{ machineRpm }}</p>
+        </div>
+      </div>
+      <div class="col-sm">
+        <ol class="list">
+          <li *ngFor="let product of  products">{{ product.name }}</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</div>

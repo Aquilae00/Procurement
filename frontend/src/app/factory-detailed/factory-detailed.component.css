@@ -1,0 +1,68 @@
+div.container\.fluid {
+  text-align: center;
+  padding-top: 10px;
+  background:#373737;
+  background: -webkit-linear-gradient(#373737, black);
+  background:    -moz-linear-gradient(#373737, black);
+  background:         linear-gradient(#373737, black);
+}
+
+div.input-group-prepend {
+  font-family: 'Bookman';
+  color: #F4F4F4;
+}
+
+
+input.form-control {
+  font-family: 'Bookman';
+  background: #F4F4F4;
+  padding-right: 15px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-color: #C0B283;
+}
+
+.input-group-text {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  background: #C0B283;
+  color: #373737;
+  border-color: #C0B283;
+}
+
+div.input-group {
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 5px;
+}
+
+ul.list-group {
+  text-align: center;
+  list-style: inside;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-bottom: 15px;
+}
+
+.title-style {
+  font-family: 'Bookman';
+  color: #F4F4F4;
+  outline: 3px solid #C0B283;
+  font-size: 36px;
+}
+
+.sub-title {
+  font-family: 'Bookman';
+  color: #F4F4F4;
+}
+
+.list {
+  font-family: 'Bookman';
+  color: #F4F4F4;
+}
+
+.list-unstyled {
+  font-family: 'Bookman';
+  color: #F4F4F4;
+  text-align: left;
+}

@@ -1,0 +1,77 @@
+<!-- Header -->
+<header>
+  <div id="parallax-image">
+    <section>
+      <div class="parallax-one">
+        <div class="text">
+          <h2>Heading</h2>
+        </div>
+        <div class="container h-100">
+          <div class="row h-100 align-items-center">
+            <div class="col-lg-12">
+              <h1 class="display-4 text-white mt-5 mb-2">{{ manufacturerName }}</h1>
+              <p class="lead mb-5 text-white-50">Insert Description</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+</header>
+
+<!-- Page Content -->
+<div class="container">
+
+  <div class="row">
+    <div class="col-md-8 mb-5">
+      <h2>What We Do</h2>
+      <hr>
+      <p>"Turmoil has engulfed the Galactic Republic. The taxation of trade routes to outlying star systems is in dispute.
+      </p>
+      <p>Hoping to resolve the matter with a blockade of deadly battleships, the greedy Trade Federation has stopped all shipping to the small planet of Naboo.
+
+        While the congress of the Republic endlessly debates this alarming chain of events, the Supreme Chancellor has secretly dispatched two Jedi Knights, the guardians of peace and justice in the galaxy, to settle the conflict...."</p>
+      <a class="btn btn-primary btn-lg" href="#">Read More &raquo;</a>
+    </div>
+    <div class="col-md-4 mb-5">
+      <h2>Contact Us</h2>
+      <hr>
+      <address>
+        <strong>{{manufacturerName}}</strong>
+        <br>{{manufacturerCity}}
+        <br>{{manufacturerRegion}}, {{manufacturerZipCode}}
+        <br>
+      </address>
+      <address>
+        <abbr title="Phone">P:</abbr>
+        {{contactInfo.phone_number}}
+        <br>
+        <abbr title="Email">E:</abbr>
+        <a href="mailto:#"> name@example.com</a>
+      </address>
+    </div>
+  </div>
+  <!-- /.row -->
+
+  <div class="card-group">
+            <app-factory (factorySelected)="onFactorySelected($event)" style="padding-bottom: 10px" *ngFor="let factory of  factoryList  "
+                         [factory]="factory">
+            </app-factory>
+  </div>
+  <!-- /.row -->
+
+</div>
+<!-- /.container -->
+
+<!-- Footer -->
+<footer class="py-5 bg-dark">
+  <div class="container">
+    <p class="m-0 text-center text-white">Copyright &copy; Your Website 2019</p>
+  </div>
+  <!-- /.container -->
+</footer>
+
+<!-- Bootstrap core JavaScript -->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
